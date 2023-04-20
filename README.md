@@ -14,9 +14,9 @@ OR
 
 1. Get Python 3.x 
 2. Download the whole code and save it to some folder on your computer.
-3. Open command prompt and run the command ```$ pip install pygame``` to install the Pygame module.
+3. Open command prompt and run the command "pip install pygame" to install the Pygame module.
 4. Go the directory where you have save the file.
-5. Now run the command python main.py
+5. Now run the command "python main.py"
 
     
 ## Moves
