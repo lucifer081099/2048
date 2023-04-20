@@ -3,7 +3,7 @@ A pygame implementation of the popular single-player puzzle game, 2048,
 designed by [Saurabh Sinha](https://github.com/lucifer081099).
 
 ## Getting Started
-1. Get Python 3.x and clone this repository
+1. Download Python 3.x and clone this repository
 2. Get [pip](https://www.makeuseof.com/tag/install-pip-for-python/), then install pygame:\
     ```$ pip install pygame```
 
@@ -12,7 +12,7 @@ designed by [Saurabh Sinha](https://github.com/lucifer081099).
     
 OR
 
-1. Get Python 3.x 
+1. Download Python 3.x version.
 2. Download the whole code and save it to some folder on your computer.
 3. Open command prompt and run the command "pip install pygame" to install the Pygame module.
 4. Go the directory where you have save the file in the command prompt.
