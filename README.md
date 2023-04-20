@@ -10,7 +10,6 @@ designed by [Saurabh Sinha](https://github.com/lucifer081099).
 3. Run the game:\
     ```$ python main.py```
     
-<img src="images/menu.jpg" height=350>      <img src="images/game.jpg" height=350>
 
 ## Moves
 1. 2048 is played on a gray 4×4 grid, with numbered tiles that slide when a player moves them using the **four arrow keys**.
