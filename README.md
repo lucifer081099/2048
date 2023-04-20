@@ -12,8 +12,9 @@ designed by [Saurabh Sinha](https://github.com/lucifer081099).
     
 
 ## Moves
-1. 2048 is played on a gray 4×4 grid, with numbered tiles that slide when a player moves them using the **four arrow keys**.
-2. Join the numbers and get to **2048** to win!
+1. 2048 is played on a gray 4×4 grid (Default), with numbered tiles that slide when a player moves them using the **four arrow keys**.
+2. If you want to change the configuration to YxY, then put the value of Y in grid_dimension file and save it.
+3. Join the numbers and get to **2048** to win!
 
 ## Game Rules
 1. Every turn, a new tile will randomly appear in an empty spot on the board with a value of either 2 or 4.
@@ -22,3 +23,4 @@ designed by [Saurabh Sinha](https://github.com/lucifer081099).
 4. The resulting tile cannot merge with another tile again in the same move. 
 5. If a move causes three consecutive tiles of the same value to slide together, only the two tiles farthest along the direction of motion will combine. 
 6. If all four spaces in a row or column are filled with tiles of the same value, a move parallel to that row/column will combine the first two and last two.
+7. Score will be calculated when two same number tiles collide with each other, for example if current score is 20 and two 4 number tiles collide with each other, then the score will become 20+4+4=28.
