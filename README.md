@@ -10,7 +10,15 @@ designed by [Saurabh Sinha](https://github.com/lucifer081099).
 3. Run the game:\
     ```$ python main.py```
     
+OR
 
+1. Get Python 3.x 
+2. Download the whole code and save it to some folder on your computer.
+3. Open command prompt and run the command ```$ pip install pygame``` to install the Pygame module.
+4. Go the directory where you have save the file.
+5. Now run the command python main.py
+
+    
 ## Moves
 1. 2048 is played on a gray 4×4 grid (Default), with numbered tiles that slide when a player moves them using the **four arrow keys**.
 2. If you want to change the configuration to YxY, then put the value of Y in grid_dimension file and save it.
