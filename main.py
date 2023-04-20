@@ -5,8 +5,11 @@ import random
 pygame.init()
 
 # initial set up
-WIDTH = 400
-HEIGHT = 500
+file1=open('grid_dimensions', 'r')
+Grid_dimensions=int(file1.readline());
+file1.close()
+WIDTH=Grid_dimensions*100
+HEIGHT=WIDTH+100
 screen = pygame.display.set_mode([WIDTH, HEIGHT])
 pygame.display.set_caption('2048')
 timer = pygame.time.Clock()
@@ -32,9 +35,6 @@ colors = {0: (204, 192, 179),
           'bg': (187, 173, 160)}
 
 # game variables initialize
-file1=open('grid_dimensions', 'r')
-Grid_dimensions=int(file1.readline());
-file1.close()
 board_values = [[0 for _ in range(Grid_dimensions)] for _ in range(Grid_dimensions)]
 game_over = False
 spawn_new = True
@@ -44,9 +44,6 @@ score = 0
 file = open('high_score', 'r')
 init_high = int(file.readline())
 file.close()
-# file1=open('grid_dimensions', 'r')
-# Grid_dimensions=int(file1.readline());
-# file1.close()
 high_score = init_high
 
 
@@ -81,7 +78,7 @@ def take_turn(direc, board):
                         board[i - shift][j] = 0
                         merged[i - shift - 1][j] = True
 
-    elif direc == 'DOWN' or direc == 'S' or direc == 's':
+    elif direc == 'DOWN':
         for i in range(Grid_dimensions-1):
             for j in range(Grid_dimensions):
                 shift = 0
@@ -156,11 +153,11 @@ def new_pieces(board):
 
 # draw background for the board
 def draw_board():
-    pygame.draw.rect(screen, colors['bg'], [0, 0, 400, 400], 0, 10)
+    pygame.draw.rect(screen, colors['bg'], [0, 0, WIDTH, WIDTH], 0, 10)
     score_text = font.render(f'Score: {score}', True, 'black')
     high_score_text = font.render(f'High Score: {high_score}', True, 'black')
-    screen.blit(score_text, (10, 410))
-    screen.blit(high_score_text, (10, 450))
+    screen.blit(score_text, (10, WIDTH+10))
+    screen.blit(high_score_text, (10, WIDTH+50))
     pass
 
 
